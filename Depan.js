@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TextInput} from 'react-native';
-
+// testing github
 export class Depan extends Component {
   state = {
     rencana: '',
