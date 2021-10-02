@@ -1,6 +1,8 @@
-import firebase from 'firebase';
+import firebase from '@firebase/app';
+import '@firebase/auth';
+import '@firebase/firestore';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyALVsDYr2B3Lg4ZTO2qCyi0HQ2xCeDcZkg',
   authDomain: 'reactnativedb-43878.firebaseapp.com',
   databaseURL: 'https://reactnativedb-43878-default-rtdb.firebaseio.com',
@@ -13,8 +15,6 @@ var firebaseConfig = {
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
-} else {
-  firebase.app();
 }
 
-export default firebase;
+export {firebase};
